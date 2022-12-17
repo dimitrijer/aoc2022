@@ -27,6 +27,7 @@ pkgs.mkShell
     ocamlPackages.ocaml
     ocamlPackages.findlib
     ocamlPackages.janeStreet.base
+    ocamlPackages.janeStreet.core_extended
     ocamlPackages.janeStreet.stdio
     ocamlPackages.janeStreet.ppx_jane
   ] ++ [ neovim ];

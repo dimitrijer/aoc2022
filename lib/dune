@@ -1,2 +1,4 @@
 (library
- (name aoc2022))
+ (name solutions)
+ (preprocess (pps ppx_jane))
+ (libraries base))
