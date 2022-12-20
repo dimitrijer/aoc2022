@@ -17,10 +17,10 @@
         "homepage": null,
         "owner": "dimitrijer",
         "repo": "nixfiles",
-        "rev": "227aff5b567ecd38912981e7914b3ccd67037c5a",
-        "sha256": "1nkch60q1dgdiyd668lkdr5yx6h7iw8kmdykggjad7fny8bda2jz",
+        "rev": "98811e338cedfd6fd36aa5333cf6f480896b7fa4",
+        "sha256": "0ds961q3c1mxfckr9vgfj4g25cygvl2bp5278r447ngmnbqjia9k",
         "type": "tarball",
-        "url": "https://github.com/dimitrijer/nixfiles/archive/227aff5b567ecd38912981e7914b3ccd67037c5a.tar.gz",
+        "url": "https://github.com/dimitrijer/nixfiles/archive/98811e338cedfd6fd36aa5333cf6f480896b7fa4.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "nixpkgs": {
