@@ -1,6 +1,10 @@
 module M = Map.Make (Int)
 
-let solvers = M.empty |> M.add Day01.Solver.day (module Day01.Solver : Solver.S)
+let solvers =
+  M.empty
+  |> M.add Day01.Solver.day (module Day01.Solver : Solver.S)
+  |> M.add Day02.Solver.day (module Day02.Solver : Solver.S)
+;;
 
 let solve day input =
   match M.find_opt day solvers with
