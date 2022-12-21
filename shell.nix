@@ -26,6 +26,7 @@ pkgs.mkShell
     ocamlPackages.ounit2
     ocamlPackages.ocaml
     ocamlPackages.findlib
+    ocamlPackages.angstrom
     ocamlPackages.janeStreet.base
     ocamlPackages.janeStreet.core_extended
     ocamlPackages.janeStreet.stdio

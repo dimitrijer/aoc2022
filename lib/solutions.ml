@@ -5,6 +5,7 @@ let solvers =
   |> M.add Day01.Solver.day (module Day01.Solver : Solver.S)
   |> M.add Day02.Solver.day (module Day02.Solver : Solver.S)
   |> M.add Day03.Solver.day (module Day03.Solver : Solver.S)
+  |> M.add Day04.Solver.day (module Day04.Solver : Solver.S)
 ;;
 
 let solve day input =

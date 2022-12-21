@@ -1,4 +1,4 @@
 (library
  (name solutions)
  (preprocess (pps ppx_jane))
- (libraries base))
+ (libraries base angstrom))
