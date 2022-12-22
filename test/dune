@@ -1,2 +1,5 @@
-(test
- (name aoc2022))
+(library
+ (name aoc2022test)
+ (inline_tests)
+ (preprocess (pps ppx_jane))
+ (libraries solutions))
