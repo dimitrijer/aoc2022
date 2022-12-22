@@ -2,4 +2,4 @@
  (name solutions)
  (preprocess (pps ppx_jane))
  (inline_tests)
- (libraries base angstrom))
+ (libraries base core angstrom))
