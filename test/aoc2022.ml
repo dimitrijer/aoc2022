@@ -25,3 +25,36 @@ move 1 from 1 to 2
 CMZ
 MCD|}]
 ;;
+
+let%expect_test "day07" =
+  solve_or_throw
+    7
+    {|
+$ cd /
+$ ls
+dir a
+14848514 b.txt
+8504156 c.dat
+dir d
+$ cd a
+$ ls
+dir e
+29116 f
+2557 g
+62596 h.lst
+$ cd e
+$ ls
+584 i
+$ cd ..
+$ cd ..
+$ cd d
+$ ls
+4060174 j
+8033020 d.log
+5626152 d.ext
+7214296 k
+|};
+  [%expect {|
+95437
+24933642|}]
+;;

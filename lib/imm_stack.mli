@@ -44,9 +44,9 @@ module type IMM_STACK = sig
       [init] as initial accumulator value. *)
   val fold : init:'a -> f:('a -> element -> 'a) -> t -> 'a
 
-  (** [compare l r] performs element-wise comparison between stack [l] and
-      stack [r]. *)
-  val compare : t -> t -> int
+  (** [equal l r] returns true if [l] and [r] contain same elements, in same
+      order. *)
+  val equal : t -> t -> bool
 end
 
 (** [Make] is a functor that creates a stack module for specified element

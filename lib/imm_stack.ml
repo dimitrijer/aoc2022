@@ -20,7 +20,7 @@ module type IMM_STACK = sig
   val pop_n : t -> int -> element list * t
   val peek : t -> element option
   val fold : init:'a -> f:('a -> element -> 'a) -> t -> 'a
-  val compare : t -> t -> int
+  val equal : t -> t -> bool
 end
 
 module Make (E : STACK_ELEM) : IMM_STACK with type element := E.t = struct
@@ -42,6 +42,7 @@ module Make (E : STACK_ELEM) : IMM_STACK with type element := E.t = struct
 
   let pop_n = List.split_n
   let fold ~init ~f s = List.fold ~init ~f s
+  let equal l r = List.equal E.equal l r
 
   let%test "push_n followed by pop_n" =
     let src = [ 'a'; 'b'; 'c' ]
